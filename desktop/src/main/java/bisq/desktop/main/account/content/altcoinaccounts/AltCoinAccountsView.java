@@ -143,7 +143,42 @@ public class AltCoinAccountsView extends PaymentAccountsView<GridPane, AltCoinAc
                     new Popup<>().information(Res.get(disclaimerAnnotation.value()))
                             .useIUnderstandButton()
                             .show();
+<<<<<<< HEAD
                 }
+=======
+                    break;
+                case "CCX":
+                    new Popup<>().information(Res.get("account.altcoin.popup.ccx.msg"))
+                            .useIUnderstandButton()
+                            .show();
+                    break;
+                case "DRGL":
+                    new Popup<>().information(Res.get("account.altcoin.popup.drgl.msg"))
+                            .useIUnderstandButton()
+                            .show();
+                    break;
+                case "ZEC":
+                    new Popup<>().information(Res.get("account.altcoin.popup.ZEC.msg", "ZEC"))
+                            .useIUnderstandButton()
+                            .show();
+                    break;
+                case "XZC":
+                    new Popup<>().information(Res.get("account.altcoin.popup.XZC.msg", "XZC"))
+                            .useIUnderstandButton()
+                            .show();
+                    break;
+                case "BCH":
+                case "BCHC":
+                    new Popup<>().information(Res.get("account.altcoin.popup.bch"))
+                            .useIUnderstandButton()
+                            .show();
+                    break;
+                case "BTG":
+                    new Popup<>().information(Res.get("account.altcoin.popup.btg"))
+                            .useIUnderstandButton()
+                            .show();
+                    break;
+>>>>>>> parent of 971a91eaf... Merge pull request #2096 from ManfredKarrer/remove-BCH
             }
 
             if (model.getPaymentAccounts().stream().noneMatch(e -> e.getAccountName() != null &&
